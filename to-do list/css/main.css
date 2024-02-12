@@ -1,6 +1,6 @@
-<style>
+
 	body{
-		background-color:#f6f6f6;
+		background-color:lightcyan;
 		font-family: 'Segoe UI',Tahoma,Geneva,sans-serif;
 		margin:0;
 		padding:0;
@@ -9,30 +9,36 @@
 	.container{
 		max-width:600px;
 		margin:20px auto;
-		background-color: #fff;
+		background-color: white;
 		border-radius: 10px;
-		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		box-shadow: 5px 5px 2px 5px rgba(0,0,0,0.1);
+		/*x_skew,y_skew,blur_size,spread,color,inset/(outside)*/
 		padding: 20px;
+		/*box size between words and box(inner), this use for box*/
 	}
 	
 	.header{
 		text-align:center;
 		margin-bottom:20px;
-		color:#3f51b5;
+		/*the above is inner, this is outter, this use for words*/
+		color:darkblue;
 	}
 	
 	.todo-form{
 		display:flex;
 		align-items:center;
+		/* align start from where*/
 		margin-bottom:20px;
 	}
 	
 	.todo-input{
 		flex:1;
+		/*is short form of flex-grow, define ratio of items*/
 		padding:10px;
 		border:none;
 		border-radius:5px;
-		box-shadow:0 1px 3px rgba(0,0,0,0.1);
+		/*set the box corner with 1/4 circle with radius*/
+		box-shadow:0 2px 4px rgba(0,0,0,0.1);
 	}
 	
 	.todo-button{
@@ -40,12 +46,15 @@
 		border:none;
 		border-radius: 5px;
 		background-color:#3f51b5;
-		color:#fff;
+		font-weight:bold;
+		color:white;
 		cursor:pointer;
+		/*change the cursor when put on the button*/
 	}
 	
 	.todo-list{
 		list-style:none;
+		/*create a list*/
 		padding:0;
 	}
 	
@@ -55,11 +64,12 @@
 		padding:10px;
 		border-radius:5px;
 		margin-bottom:10px;
-		background-color:#e8e8e8;
+		background-color:white;
 		box-shadow:0 2px 5px rgba(0,0,0,0.1);
 	}
 	
 	.todo-item:last-child{
+		/*last item*/
 		margin-bottom:10px;
 	}
 	
@@ -72,19 +82,19 @@
 		color:#3f51b5;
 		font-weight:bold;
 	}
-	
-	.todo-item-delete{
-		padding:5px 10px;
-		border: none;
-		border-radius:5px;
-		background-color:#ff6b6b;
-		color:#fff;
-		cursor:pointer;
-		transition:background-color 0.3s;
-	}
+
+.todo-item-delete {
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ff3737;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	/*CSS property transition smoothly over a period of time*/
+}
 	
 	.todo-item-delete:hover{
-		background-color:#ff4f4f;
+		background-color:#ff3737;
 	}
 	
-</style>
