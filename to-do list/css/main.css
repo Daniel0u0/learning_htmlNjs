@@ -11,7 +11,7 @@
 		margin:20px auto;
 		background-color: #fff;
 		border-radius: 10px;
-		border-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 		padding: 20px;
 	}
 	
@@ -24,7 +24,7 @@
 	.todo-form{
 		display:flex;
 		align-items:center;
-		margin-bottm:20px;
+		margin-bottom:20px;
 	}
 	
 	.todo-input{
@@ -38,7 +38,7 @@
 	.todo-button{
 		padding: 10px 20px;
 		border:none;
-		border-raduis: 5px;
+		border-radius: 5px;
 		background-color:#3f51b5;
 		color:#fff;
 		cursor:pointer;
@@ -51,7 +51,7 @@
 	
 	.todo-item{
 		display:flex;
-		align-item:center;
+		align-items:center;
 		padding:10px;
 		border-radius:5px;
 		margin-bottom:10px;
@@ -80,7 +80,7 @@
 		background-color:#ff6b6b;
 		color:#fff;
 		cursor:pointer;
-		transitition:background-color 0.3s;
+		transition:background-color 0.3s;
 	}
 	
 	.todo-item-delete:hover{
