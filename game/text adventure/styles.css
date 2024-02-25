@@ -1,0 +1,53 @@
+/*set border*/
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* every thing in the centre*/
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*vertical items*/
+    width: 100vw;
+    height:100vh;
+    /* nice grey color*/
+    background-color: #333;
+}
+
+.container{
+    width: 800px;
+    /*never extends too far*/
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius:5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+/*whole grid*/
+.btn-grid{
+    display:grid;
+    /*we want 2 cols*/
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/*4 buttons format*/
+.btn{
+    background-color: hsl(200, 100%, 50%);
+    border: 1px solid hsl(200, 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+/*when mouse on it*/
+.btn:hover{
+    border-color:black;
+}
