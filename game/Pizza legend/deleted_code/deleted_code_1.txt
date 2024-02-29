@@ -1,0 +1,43 @@
+        
+	//image of our map is in canvas(the white window)
+        //download our assert and copy pixels to browser
+        
+        //how it draws in canvas?
+        //things draw first will be covered
+
+	const x = 5; //0,0 is lef hand corner
+        const y = 6;
+        //draw shadow for hero
+        const shadow = new Image();
+        shadow.onload = () => {
+            this.ctx.drawImage(
+                shadow, 
+                0, //left cut
+                0, //top cut
+                32, //width of cut
+                32, //height of cut
+                x* 16 - 8, //map is 16x16 , 
+                y* 16 - 18, //u need to measure and subtract
+                32, //enlarge along x
+                32, //enlarge along y
+                )
+
+        }
+        shadow.src = "images/characters/shadow.png";
+
+        //draw person
+        const hero = new Image();
+        hero.onload = () => {
+            this.ctx.drawImage(
+                hero, 
+                0, //left cut
+                0, //top cut
+                32, //width of cut
+                32, //height of cut
+                x* 16 - 8, //map is 16x16 , 
+                y* 16 - 18, //u need to measure and subtract
+                32, //enlarge along x
+                32, //enlarge along y
+                )
+        }
+        hero.src = "images/characters/people/hero.png";

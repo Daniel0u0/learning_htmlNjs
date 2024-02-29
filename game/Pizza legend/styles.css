@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #333;
+    padding: 0;
+    margin: 0;
+    /*disable scrolling*/
+    overflow: hidden;
+}
+
+/*house for the entire game*/
+.game-container{
+    position: relative;
+    width: 352px;
+    height: 198px;
+    margin: 0 auto;
+    margin-top: 20px;
+    outline: 1px solid #fff;
+
+    /* enlarge, move it down */
+    transform: scale(3) translateY(50%);
+
+
+
+
+
+}
+
+/* tell the browser dont worry pixel for all canvas, higer resolution*/
+.game-container canvas{
+    image-rendering: pixelated;
+}
