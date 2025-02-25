@@ -10,15 +10,15 @@ class Overworld {
         const step = () => {
             
             //clean previous frame
-            //this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
             
             //draw Lower layer
             this.map.drawLowerImage(this.ctx);
 
             //draw Game Objects, the below has error, cannot generate game objext
             Object.values(this.map.gameObjects).forEach(object => {
-                //oject.x += 0.02;
-                //object.sprite.draw(this.ctx);
+                //object.x += 0.02;
+                object.sprite.draw(this.ctx);
             })
 
             //draw Upper layer
@@ -36,16 +36,10 @@ class Overworld {
 
     init() {
         this.map = new OverworldMap (window.OverworldMaps.DemoRoom);
-        this.startGameLoop();
-
-
-
-
-
-
-
         
+        this.startGameLoop();
 
     }
 
 }
+

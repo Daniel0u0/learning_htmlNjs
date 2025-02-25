@@ -1,13 +1,13 @@
 class OverworldMap {
-constructor(config){
-    this.gameObject = config.gameObjects;
+    constructor(config){
+        this.gameObjects = config.gameObjects;
 
-    this.lowerImage = new Image();
-    this.lowerImage.src = config.lowerSrc;
+        this.lowerImage = new Image();
+        this.lowerImage.src = config.lowerSrc;
 
-    this.upperImage = new Image();
-    this.upperImage.src = config.upperSrc;
-}
+        this.upperImage = new Image();
+        this.upperImage.src = config.upperSrc;
+    }
 
     drawLowerImage(ctx){
         ctx.drawImage(this.lowerImage, 0 ,0)
@@ -17,6 +17,7 @@ constructor(config){
         ctx.drawImage(this.upperImage, 0 ,0)
     }
 }
+
 
 //all the maps in game
 window.OverworldMaps = {
@@ -58,3 +59,4 @@ window.OverworldMaps = {
         }
     },
 }
+
